@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/layarEkspresiMatematika"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:singleLine="true"
+            android:textColor="@color/textLayar"
+            android:textSize="40sp" />
+
+    <TextView
+            android:id="@+id/layarHasil"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:singleLine="true"
+            android:textColor="@color/textLayar"
+            android:textSize="30sp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tombolBersihikan"
+                    style="@style/ActionStyle"
+                    android:text="CE" />
+
+            <ImageView
+                    android:id="@+id/tombolHapus"
+                    style="@style/ActionStyle"
+                    android:scaleType="center"
+                    android:src="@drawable/backspace" />
+
+
+            <TextView
+                    android:id="@+id/tombolBukaKurung"
+                    style="@style/ActionStyle"
+                    android:text="(" />
+
+            <TextView
+                    android:id="@+id/tombolTutupKurung"
+                    style="@style/ActionStyle"
+                    android:text=")" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tombolTujuh"
+                    style="@style/NumberButtonStyle"
+                    android:text="7" />
+
+            <TextView
+                    android:id="@+id/tombolDelapan"
+                    style="@style/NumberButtonStyle"
+                    android:text="8" />
+
+            <TextView
+                    android:id="@+id/tombolSembilan"
+                    style="@style/NumberButtonStyle"
+                    android:text="9" />
+            <TextView
+                    android:id="@+id/tombolBagi"
+                    style="@style/ActionStyle"
+                    android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+            <TextView
+                    android:id="@+id/tombolEmpat"
+                    style="@style/NumberButtonStyle"
+                    android:text="4" />
+
+            <TextView
+                    android:id="@+id/tombolLima"
+                    style="@style/NumberButtonStyle"
+                    android:text="5" />
+
+            <TextView
+                    android:id="@+id/tombolEnam"
+                    style="@style/NumberButtonStyle"
+                    android:text="6" />
+            <TextView
+                    android:id="@+id/tombolKali"
+                    style="@style/ActionStyle"
+                    android:text="*" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+            <TextView
+                    android:id="@+id/tombolSatu"
+                    style="@style/NumberButtonStyle"
+                    android:text="1" />
+
+            <TextView
+                    android:id="@+id/tombolDua"
+                    style="@style/NumberButtonStyle"
+                    android:text="2" />
+
+            <TextView
+                    android:id="@+id/tombolTiga"
+                    style="@style/NumberButtonStyle"
+                    android:text="3" />
+            <TextView
+                    android:id="@+id/tombolKurang"
+                    style="@style/ActionStyle"
+                    android:text="-" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tombolTitik"
+                    style="@style/NumberButtonStyle"
+                    android:text="." />
+
+            <TextView
+                    android:id="@+id/tombolNol"
+                    style="@style/NumberButtonStyle"
+                    android:text="0" />
+
+            <TextView
+                    android:id="@+id/tombolSamaDengan"
+                    style="@style/ButtonSubmitStyle"
+                    android:text="=" />
+
+            <TextView
+                    android:id="@+id/tombolTambah"
+                    style="@style/ActionStyle"
+                    android:text="+" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

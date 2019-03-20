@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7AFF9A</color>
+    <color name="colorPrimaryDark">#00AA1A</color>
+    <color name="colorAccent">#B103FC</color>
+    <color name="actionButton">#00FF52</color>
+    <color name="numberButton">#2DAF00</color>
+    <color name="submitButton">#5BFF00</color>
+    <color name="textLayar">#000000</color>
+</resources>
