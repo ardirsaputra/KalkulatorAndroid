@@ -14,7 +14,7 @@
             android:gravity="end"
             android:singleLine="true"
             android:textColor="@color/textLayar"
-            android:textSize="40sp" />
+            android:textSize="40sp"/>
 
     <TextView
             android:id="@+id/layarHasil"
@@ -24,7 +24,7 @@
             android:gravity="end"
             android:singleLine="true"
             android:textColor="@color/textLayar"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -40,24 +40,24 @@
             <TextView
                     android:id="@+id/tombolBersihikan"
                     style="@style/ActionStyle"
-                    android:text="CE" />
+                    android:text="CE"/>
 
             <ImageView
                     android:id="@+id/tombolHapus"
                     style="@style/ActionStyle"
                     android:scaleType="center"
-                    android:src="@drawable/backspace" />
+                    android:src="@drawable/backspace" android:contentDescription="TODO"/>
 
 
             <TextView
                     android:id="@+id/tombolBukaKurung"
                     style="@style/ActionStyle"
-                    android:text="(" />
+                    android:text="("/>
 
             <TextView
                     android:id="@+id/tombolTutupKurung"
                     style="@style/ActionStyle"
-                    android:text=")" />
+                    android:text=")"/>
 
         </LinearLayout>
 
@@ -70,21 +70,21 @@
             <TextView
                     android:id="@+id/tombolTujuh"
                     style="@style/NumberButtonStyle"
-                    android:text="7" />
+                    android:text="7"/>
 
             <TextView
                     android:id="@+id/tombolDelapan"
                     style="@style/NumberButtonStyle"
-                    android:text="8" />
+                    android:text="8"/>
 
             <TextView
                     android:id="@+id/tombolSembilan"
                     style="@style/NumberButtonStyle"
-                    android:text="9" />
+                    android:text="9"/>
             <TextView
                     android:id="@+id/tombolBagi"
                     style="@style/ActionStyle"
-                    android:text="/" />
+                    android:text="/"/>
 
         </LinearLayout>
 
@@ -98,21 +98,21 @@
             <TextView
                     android:id="@+id/tombolEmpat"
                     style="@style/NumberButtonStyle"
-                    android:text="4" />
+                    android:text="4"/>
 
             <TextView
                     android:id="@+id/tombolLima"
                     style="@style/NumberButtonStyle"
-                    android:text="5" />
+                    android:text="5"/>
 
             <TextView
                     android:id="@+id/tombolEnam"
                     style="@style/NumberButtonStyle"
-                    android:text="6" />
+                    android:text="6"/>
             <TextView
                     android:id="@+id/tombolKali"
                     style="@style/ActionStyle"
-                    android:text="*" />
+                    android:text="*"/>
 
 
         </LinearLayout>
@@ -127,21 +127,21 @@
             <TextView
                     android:id="@+id/tombolSatu"
                     style="@style/NumberButtonStyle"
-                    android:text="1" />
+                    android:text="1"/>
 
             <TextView
                     android:id="@+id/tombolDua"
                     style="@style/NumberButtonStyle"
-                    android:text="2" />
+                    android:text="2"/>
 
             <TextView
                     android:id="@+id/tombolTiga"
                     style="@style/NumberButtonStyle"
-                    android:text="3" />
+                    android:text="3"/>
             <TextView
                     android:id="@+id/tombolKurang"
                     style="@style/ActionStyle"
-                    android:text="-" />
+                    android:text="-"/>
 
 
         </LinearLayout>
@@ -155,22 +155,22 @@
             <TextView
                     android:id="@+id/tombolTitik"
                     style="@style/NumberButtonStyle"
-                    android:text="." />
+                    android:text="."/>
 
             <TextView
                     android:id="@+id/tombolNol"
                     style="@style/NumberButtonStyle"
-                    android:text="0" />
+                    android:text="0"/>
 
             <TextView
                     android:id="@+id/tombolSamaDengan"
                     style="@style/ButtonSubmitStyle"
-                    android:text="=" />
+                    android:text="="/>
 
             <TextView
                     android:id="@+id/tombolTambah"
                     style="@style/ActionStyle"
-                    android:text="+" />
+                    android:text="+"/>
         </LinearLayout>
 
 

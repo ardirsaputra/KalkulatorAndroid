@@ -13,28 +13,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Numbers
-        tombolSatu.setOnClickListener { appendOnExpresstion("1", true) }
-        tombolDua.setOnClickListener { appendOnExpresstion("2", true) }
-        tombolTiga.setOnClickListener { appendOnExpresstion("3", true) }
-        tombolEmpat.setOnClickListener { appendOnExpresstion("4", true) }
-        tombolLima.setOnClickListener { appendOnExpresstion("5", true) }
-        tombolEnam.setOnClickListener { appendOnExpresstion("6", true) }
-        tombolTujuh.setOnClickListener { appendOnExpresstion("7", true) }
-        tombolDelapan.setOnClickListener { appendOnExpresstion("8", true) }
-        tombolSembilan.setOnClickListener { appendOnExpresstion("9", true) }
-        tombolNol.setOnClickListener { appendOnExpresstion("0", true) }
-        tombolTitik.setOnClickListener { appendOnExpresstion(".", true) }
+        layarEkspresiMatematika.text= "0" ;
+        tombolSatu.setOnClickListener { masukanKeEkspresiMatematika("1", true) }
+        tombolDua.setOnClickListener { masukanKeEkspresiMatematika("2", true) }
+        tombolTiga.setOnClickListener { masukanKeEkspresiMatematika("3", true) }
+        tombolEmpat.setOnClickListener { masukanKeEkspresiMatematika("4", true) }
+        tombolLima.setOnClickListener { masukanKeEkspresiMatematika("5", true) }
+        tombolEnam.setOnClickListener { masukanKeEkspresiMatematika("6", true) }
+        tombolTujuh.setOnClickListener { masukanKeEkspresiMatematika("7", true) }
+        tombolDelapan.setOnClickListener { masukanKeEkspresiMatematika("8", true) }
+        tombolSembilan.setOnClickListener { masukanKeEkspresiMatematika("9", true) }
+        tombolNol.setOnClickListener { masukanKeEkspresiMatematika("0", true) }
+        tombolTitik.setOnClickListener { masukanKeEkspresiMatematika(".", true) }
 
         //Operators
-        tombolTambah.setOnClickListener { appendOnExpresstion("+", false) }
-        tombolKurang.setOnClickListener { appendOnExpresstion("-", false) }
-        tombolKali.setOnClickListener { appendOnExpresstion("*", false) }
-        tombolBagi.setOnClickListener { appendOnExpresstion("/", false) }
-        tombolBukaKurung.setOnClickListener { appendOnExpresstion("(", false) }
-        tombolTutupKurung.setOnClickListener { appendOnExpresstion(")", false) }
+        tombolTambah.setOnClickListener { masukanKeEkspresiMatematika("+", false) }
+        tombolKurang.setOnClickListener { masukanKeEkspresiMatematika("-", false) }
+        tombolKali.setOnClickListener { masukanKeEkspresiMatematika("*", false) }
+        tombolBagi.setOnClickListener { masukanKeEkspresiMatematika("/", false) }
+        tombolBukaKurung.setOnClickListener { masukanKeEkspresiMatematika("(", false) }
+        tombolTutupKurung.setOnClickListener { masukanKeEkspresiMatematika(")", false) }
 
         tombolBersihikan.setOnClickListener {
-            layarEkspresiMatematika.text = ""
+            layarEkspresiMatematika.text = "0"
             layarHasil.text = ""
         }
 
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                 layarEkspresiMatematika.text = string.substring(0,string.length-1)
             }
             layarHasil.text = ""
+            isZero()
         }
 
         tombolSamaDengan.setOnClickListener {
@@ -59,12 +61,27 @@ class MainActivity : AppCompatActivity() {
 
             }catch (e:Exception){
                 Log.d("Exception"," message : " + e.message )
+                layarHasil.text = "Ekspresi Error"
             }
         }
-
     }
+    fun isZero(){
+        if(layarEkspresiMatematika.text.toString() == ""){
+            layarEkspresiMatematika.text = "0";
+        }
+    }
+    fun masukanKeEkspresiMatematika(string: String, canClear: Boolean) {
+        if(layarEkspresiMatematika.text.toString() == "0") {
+            if(!canClear){
 
-    fun appendOnExpresstion(string: String, canClear: Boolean) {
+            }else{
+                if(string == "." || string == "0" ){
+
+                }else{
+                    layarEkspresiMatematika.text = layarEkspresiMatematika.text.toString().substring(0,layarEkspresiMatematika.text.toString().length-1)
+                }
+            }
+        }
         if(layarHasil.text.isNotEmpty()){
             layarEkspresiMatematika.text = ""
         }

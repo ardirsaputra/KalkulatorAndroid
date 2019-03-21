@@ -2,4 +2,5 @@
     <string name="app_name">Kalkulator Sederhana</string>
      <string name="button">Layar</string>
     <string name="layar">layar</string>
+	<string name="ce">CE</string>
 </resources>
